@@ -1,0 +1,111 @@
+/* Global Font Classes */
+.font-secondary {
+	font-family: $font-secondary;
+}
+
+.font-tertiary {
+	font-family: $font-tertiary;
+}
+
+//Intro text
+.intro {
+	font-family: $font-secondary;
+	text-align: center;
+	max-width: 50em;
+	margin: 0 auto $space;
+}
+
+//Pullquote
+.pullquote {
+	font-family: $font-secondary;
+	font-size: $font-size-large;
+}
+
+//Post header
+.post-header {
+	text-align: center;	
+	margin-bottom: 2em;
+}
+
+.post-title {
+	margin-bottom: 0;
+}
+
+//Post title
+.post-timestamp {
+	font-size: 85%;
+	color: $gray-light-4;
+	font-style: italic;
+}
+
+.post-footer {
+	font-size: 85%;
+	color: $gray-light-4;
+	font-style: italic;
+	margin-bottom: 1rem;
+}
+
+//Text Passages
+.text {
+	a {
+		color: $pink;
+		
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+
+	ul {
+		list-style: square;
+		margin: 0 0 $space 1.2em;
+
+		ul {
+			margin-bottom: 0;
+		}
+	}
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 $space 1.2em;
+
+		ol {
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* Review Grade Tile */
+.grade {
+	display: block;
+	font-weight: bold;
+	background: $gray;
+	color: $white;
+	min-height: 4.5rem;
+	padding-top: 1.5rem;
+	text-align: center;
+}
+
+/* Eyebrow */
+.eyebrow {
+	background: $gray-dark;
+	color: $white;
+	padding: 0.2em;
+	display: inline-block;
+	margin-bottom: $space-half;
+}
+
+.eyebrow-image {
+	position: relative;
+	
+	img {
+		position: relative;
+		z-index: 0;
+	}
+
+	.eyebrow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+}

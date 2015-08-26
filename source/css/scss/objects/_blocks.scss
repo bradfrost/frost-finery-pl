@@ -1,0 +1,46 @@
+/* Block */
+.block {
+	overflow: hidden;
+	
+	a {
+		&:hover, &:focus {
+			color: $pink;
+		}
+	}
+}
+
+.headline {
+	line-height: 1.2;
+}
+
+// Hero Block
+.block-hero {
+	margin-bottom: $space;
+	text-align: center;
+	
+	.b-excerpt {
+		font-family: $font-secondary;
+		margin: 0 auto 2em;
+		max-width: 39em;
+		color: $gray-dark;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+// Tout Block
+.block-tout {
+	.b-eyebrow {
+		font-size: 100%;
+		text-transform: lowercase;
+	}
+	
+	.b-title {
+		font-size: 100%;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+	}
+}

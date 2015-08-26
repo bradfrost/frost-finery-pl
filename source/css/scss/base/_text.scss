@@ -1,0 +1,46 @@
+/* Text-Related Elements */ 
+p {
+	margin-bottom: $space;
+}
+
+/* Blockquote */
+blockquote {
+    font-style:italic;
+    border-left: 1px solid $gray;
+    color: $gray;
+	padding-left: $pad;
+	margin-bottom: $space;
+}
+
+/* Horizontal Rule */ 
+hr {
+	display: block;
+	border: 0;
+	border-bottom: 1px solid $black;
+    margin: $space-double 0 $space;
+    position: relative;
+    width: 100%;
+    
+    
+    &:before, &:after {
+	    content: "";
+	    display: block;
+	    width: 60px;
+	    height: 30px;
+	    background: url(images/bg_burst.svg) no-repeat 50% 100%;
+	    background-size: contain;
+	    position: absolute;
+	    bottom: 95%;
+	    left: 0;
+    }
+    
+    &:after {
+	    left: auto;
+	    right: 0;
+    }
+}
+
+abbr {
+    border-bottom: 1px dotted $gray;
+    cursor: help;
+}

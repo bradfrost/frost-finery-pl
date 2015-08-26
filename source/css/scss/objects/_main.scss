@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+[role=main] {
+	@extend .lc;
+	@extend .cf;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	overflow: hidden;
+	flex: 1;
+	
+	@media all and (min-width: 30em) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}

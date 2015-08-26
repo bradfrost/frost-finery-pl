@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn, input[type=submit] {
+	display: inline-block;
+	background: $black;
+	color: $white;
+	line-height: 1;
+	font-weight: bold;
+	padding: 1.5em;
+	min-width: 11em;
+	border: 0;
+	border-radius: 0;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.2s ease-out;
+	-webkit-appearance: none;
+	
+	&:hover, &:focus {
+		color: $white;
+		background: $pink;
+	}
+
+	&.disabled {
+		background: $gray-light-2;
+		color: $gray-light-4;
+	}
+}
+
+.btn-bar {
+	text-align: center;
+	
+	.btn {
+		position: relative;
+		
+		&:before {
+			content: "";
+			width: 4em;
+			height: 4em;
+			background: url(images/bg_diamond.svg) no-repeat 50% 50%;
+			background-size: contain;
+			position: absolute;
+			top: 0;
+			left: -5em;
+		}
+		
+		&:after {
+			content: "";
+			width: 4em;
+			height: 4em;
+			background: url(images/bg_diamond.svg) no-repeat 50% 50%;
+			background-size: contain;
+			position: absolute;
+			top: 0;
+			right: -5em;
+		}
+	}
+}
