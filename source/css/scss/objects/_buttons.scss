@@ -42,6 +42,7 @@
 			position: absolute;
 			top: 0;
 			left: -5em;
+			transition: transform 0.2s ease;
 		}
 		
 		&:after {
@@ -53,6 +54,17 @@
 			position: absolute;
 			top: 0;
 			right: -5em;
+			transition: transform 0.2s ease;
+		}
+		
+		&:hover {
+			&:before {
+			transform: rotate(-20deg);
+			}
+			&:after {
+			transform: rotate(20deg);
+			}
 		}
 	}
+
 }
