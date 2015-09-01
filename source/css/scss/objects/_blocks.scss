@@ -3,6 +3,7 @@
 	overflow: hidden;
 	
 	a {
+		transition: color 0.2s ease;
 		&:hover, &:focus {
 			color: $pink;
 		}

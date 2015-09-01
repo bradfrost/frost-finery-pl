@@ -41,6 +41,7 @@
 		padding: 1em 0.5em;
 		text-transform: uppercase;
 		text-align: center;
+		transition: color 0.2s ease;
 		
 		&:hover, &:focus, &.active {
 			color: $pink;
