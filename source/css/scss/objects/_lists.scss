@@ -4,7 +4,7 @@
 	}
 	img {
 		display: block;
-		transition: all .2s ease-in-out; 
+		transition: all 0.2s ease-in-out; 
 		
 		&:hover {
 			transform: translate3d(0,0,0);
@@ -13,4 +13,41 @@
 	}
 }
 
+.events-list-item {
+	text-align: center;
+	a {
+		color: $gray;
+		display: block;
+		transition: all 0.2s ease-in-out;
+		margin: 1em 0 1em 0;
+		
+		&:hover, &:hover h3 {
+			color: $pink;
+		}
+		
+		h3 {
+			color: $gray-dark;		
+			transition: all 0.2s ease-in-out;
+		}
+	}
+	
+	&:after {
+		content: "";
+		display: block;
+		height: 2px;
+		background: $gray-light-3;
+		max-width: 100px;
+		margin: 2em auto 2em;
+		
+	}
+	
+}
+
+.events-list {
+	li:last-child {
+		.events-list-item:after {
+			display: none;
+		}
+	}
+}
 
