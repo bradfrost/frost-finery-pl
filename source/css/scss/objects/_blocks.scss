@@ -45,4 +45,14 @@
 		text-transform: uppercase;
 		margin-bottom: 1em;
 	}
+	
+	img {
+	display: block;
+	transition: all 0.2s ease-in-out; 
+	
+		&:hover {
+			transform: translate3d(0,0,0);
+			transform: scale(1.1);
+		}
+	}
 }
