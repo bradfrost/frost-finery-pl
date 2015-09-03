@@ -21,6 +21,11 @@ hr {
     position: relative;
     width: 100%;
     
+    &.hr-short {
+	    max-width: 27em;
+		margin: 2em auto 2em;
+    }
+    
     
     &:before, &:after {
 	    content: "";
