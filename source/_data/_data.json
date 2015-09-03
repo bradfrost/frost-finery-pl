@@ -78,5 +78,12 @@
 			}
 		}
 	],
-	"hero": true
+	"hero": true,
+	"event": {
+		"name": "Lorem ipsum",
+		"location": "Street, City, State",
+		"date": "August 24, 2015",
+		"time": "7:00AM",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	}
 }
