@@ -85,5 +85,20 @@
 		"date": "August 24, 2015",
 		"time": "7:00AM",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-	}
+	},
+	"name" : "Balls Mahoney",
+	"img" : {
+		"square" : {
+			"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
+		}
+	},
+	"type" : "Type: Ring",
+	"section" : "Collection",
+	"material" : "Material: Gold-Plated",
+	"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
+	"retail" : "Retail: $60",
+	"bom" : "BOM Price: $40",
+	"inventory" : "Inventory: 3",
+	"sold" : "Number Sold: 2"
+	
 }
