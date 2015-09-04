@@ -56,3 +56,64 @@
 		}
 	}
 }
+
+.jewelry-item {
+	display: block;
+}
+		
+.jewelry-thumb {
+	display: block;
+}
+
+.jewelry-panel-image {
+	flex: 1 0 auto;
+	width: 50%;
+	
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+	
+.jewelry-panel {
+	display: flex;
+	position: relative;
+	background: $gray-dark;
+	color: #fff;
+	padding: 0.5em;
+	
+	&:before {
+	content: "";
+	position: absolute;
+	top: -18px;
+	left: 171px;
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid $gray-dark;
+	}
+	
+	h2 {
+		font-family: "etica-display","HelveticaNeue","Helvetica","Arial",sans-serif;
+		padding: 0.3em 0 0.3em 0;
+	}
+	
+	p {
+		font-family: "adelle","HelveticaNeue","Helvetica","Arial",sans-serif;
+		font-style: italic;
+	}
+	
+	ul {
+		font-family: "adelle","HelveticaNeue","Helvetica","Arial",sans-serif;
+		font-style: italic;
+		list-style: disc;
+		margin-left: 10px;
+		padding: 0 0 1em 0;
+	}
+}
+
+.jewelry-info {
+	padding: 1em 1.5em 1em 2em;
+}
+
