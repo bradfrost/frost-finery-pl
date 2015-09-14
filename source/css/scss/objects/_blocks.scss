@@ -51,10 +51,37 @@
 .jewelry-item {
 	display: block;
 	width: 100%;
+	
+	&.active {
+		.jewelry-panel {
+		display: flex;
+		}
+		
+		.jewelry-thumb:after {
+			display: block;
+		}
+	}
 }
+
 		
 .jewelry-thumb {
 	display: block;
+	position: relative;
+	
+	&:after {
+		display: none;
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 0; 
+		height: 0;
+		margin-left: -20px; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid $gray-dark;
+		z-index: 99999;
+		}
 	
 	img {
 	transition: all 0.2s ease-in-out; 
@@ -83,25 +110,8 @@
 	background: $gray-dark;
 	color: #fff;
 	padding: 0.5em;
-	width: 1000px;
+	width: 100vw;
 	z-index: 99999;
-	margin: 0 auto;
-	
-	&.active {
-		display: flex;
-	}
-	
-	&:before {
-	content: "";
-	position: absolute;
-	top: -18px;
-	left: 171px;
-	width: 0; 
-	height: 0; 
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-bottom: 20px solid $gray-dark;
-	}
 	
 	h2 {
 		font-family: "etica-display","HelveticaNeue","Helvetica","Arial",sans-serif;
