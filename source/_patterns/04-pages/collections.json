@@ -7,22 +7,7 @@
 	"collection-list" : [
 		{
 			"name" : "Balls Mahoney",
-			"img" : {
-				"square" : {
-					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
-				}
-			},
-			"type" : "Ring",
-			"section" : "Collection",
-			"material" : "Gold-Plated",
-			"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
-			"retail" : "60",
-			"bom" : "40",
-			"inventory" : "3",
-			"sold" : "2"
-		},
-		
-		{	"name" : "Balls Mahoney",
+			"id" : "1",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -38,6 +23,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "2",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -53,6 +39,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "3",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -68,6 +55,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "4",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -83,6 +71,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "5",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -98,6 +87,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "6",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -113,6 +103,23 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "7",
+			"img" : {
+				"square" : {
+					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
+				}
+			},
+			"type" : "Ring",
+			"section" : "Collection",
+			"material" : "Gold-Plated",
+			"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
+			"retail" : "60",
+			"bom" : "40",
+			"inventory" : "3",
+			"sold" : "2"
+		},
+		{	"name" : "Balls Mahoney",
+			"id" : "8",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -139,6 +146,7 @@
 	"archive-list" : [
 		{
 			"name" : "Balls Mahoney",
+			"id" : "9",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -155,6 +163,7 @@
 		},
 		
 		{	"name" : "Balls Mahoney",
+			"id" : "10",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -170,6 +179,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "10",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -185,6 +195,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "11",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -200,6 +211,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "12",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -215,6 +227,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "13",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -230,6 +243,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "14",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
@@ -245,6 +259,7 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
+			"id" : "15",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery:8888/wp-content/uploads/2014/11/littlemountainstack.jpg"
