@@ -9,14 +9,11 @@
 })(this);
 
 var isLooping = false;
-
+var current = 1;
 flyoutMode = false;
 var jewelryFlyout = document.querySelectorAll('.jewelry-image > a');
 $('.jewelry-image > a').click(function(event) {
 	event.preventDefault();
-	if (isLooping === false) {
-		startInterval();
-	}
 	var jewelryId = $(this).attr('href');
 	var jewelryCurrent = $(this).parents('.jewelry-item');
 	console.log(jewelryCurrent);
@@ -29,11 +26,16 @@ $('.jewelry-image > a').click(function(event) {
 		jewelryCurrent.addClass('active');
 		jewelryCurrent.find('.jewelry-panel').css("left",(xOffsetFromWindow * -1)+"px");
 	}
+	
+	//Set gallery image back to the first image
+	current = 1;
+	$('.jewelry-item.active .jewelry-gallery li').removeClass("active");
+	$(".jewelry-item.active .jewelry-gallery li:nth-of-type(1)").addClass("active");
+	if (isLooping === false) {
+		startInterval();
+	}
 });
 
-
-
-var current = 1;
 function advanceImage() {
 	var panelImage = $('.jewelry-item.active .jewelry-gallery li');
 	var num = $(".jewelry-item.active .jewelry-gallery li").length;
