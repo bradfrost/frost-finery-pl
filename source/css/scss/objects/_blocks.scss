@@ -54,7 +54,11 @@
 	
 	&.active {
 		.jewelry-panel {
-		display: flex;
+			display: block;
+			
+			@media all and (min-width: 640px) {
+				display: flex;
+			}
 		}
 		
 		.jewelry-thumb:after {
@@ -93,16 +97,7 @@
 	}
 }
 
-.jewelry-panel-image {
-	flex: 1 0 auto;
-	width: 50%;
-	img {
-		display: block;
-		width: 100%;
-		transform: none;
-		transition: none;
-	}
-}
+
 	
 .jewelry-panel {
 	display: none;
@@ -140,6 +135,20 @@
 	}
 }
 
+.jewelry-panel-image {
+	img {
+		display: block;
+		width: 100%;
+		transform: none;
+		transition: none;
+	}
+	
+	@media all and (min-width: 640px) {
+				flex: 1 0 auto;
+				width: 50%;
+			}
+}
+
 .jewelry-info {
 	padding: 1em 1.5em 1em 2em;
 	width: 100%;
@@ -154,6 +163,7 @@
 	    top:0;
 		left:0;
 		list-style: none;
+		padding:0;
 	}
 
 	li {
