@@ -17,14 +17,13 @@ $('.jewelry-image > a').click(function(event) {
 	var jewelryId = $(this).attr('href');
 	var jewelryCurrent = $(this).parents('.jewelry-item');
 	console.log(jewelryCurrent);
-	var xOffsetFromWindow = getOffsetLeft($(this)[0]);
 	$('.jewelry-item').not(jewelryCurrent).removeClass('active');
 	if(jewelryCurrent.hasClass('active')) {
 		jewelryCurrent.removeClass('active');
 	}
 	else {
 		jewelryCurrent.addClass('active');
-		jewelryCurrent.find('.jewelry-panel').css("left",(xOffsetFromWindow * -1)+"px");
+		jewelryPanelPosition();
 	}
 	
 	//Set gallery image back to the first image
@@ -34,6 +33,15 @@ $('.jewelry-image > a').click(function(event) {
 	if (isLooping === false) {
 		startInterval();
 	}
+});
+
+function jewelryPanelPosition() {
+	var xOffsetFromWindow = getOffsetLeft($('.jewelry-item.active')[0]);
+		$('.jewelry-item.active').find('.jewelry-panel').css("left",(xOffsetFromWindow * -1)+"px");
+}
+
+$(window).resize(function() {
+	jewelryPanelPosition();
 });
 
 function advanceImage() {
