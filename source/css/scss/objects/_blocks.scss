@@ -69,10 +69,8 @@
 
 		
 .jewelry-thumb {
-	border: solid #ededed 1px;
 	display: block;
 	position: relative;
-	box-shadow: 2px 11px 12px -13px rgba(0,0,0,0.2);
 			
 	&:after {
 		display: none;
@@ -90,7 +88,9 @@
 		}
 	
 	img {
-	transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+	box-shadow: 2px 11px 12px -13px rgba(0,0,0,0.2);
+	border: solid #ededed 1px; 
 	
 		&:hover {
 			transform: translate3d(0,0,0);
