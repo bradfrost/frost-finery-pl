@@ -13,8 +13,8 @@ var current = 1;
 flyoutMode = false;
 var jewelryFlyout = document.querySelectorAll('.jewelry-image > a');
 $('.jewelry-image > a').click(function(event) {
-	var thisHref = $(this).attr('href').substring(1);
 	event.preventDefault();
+	var thisHref = $(this).attr('href').substring(1);
 	openPanel(thisHref);
 });
 
@@ -41,7 +41,7 @@ function advanceImage() {
 	console.log(current);
 }
 
-$('.jewelry-gallery').click(function(event) {
+$('.jewelry-gallery').click(function(event) {;
 	clearInterval(isLooping);
 	isLooping = false;
 	advanceImage();
@@ -54,17 +54,15 @@ function startInterval() {
 }
 
 if(window.location.hash) {
-      var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-      openPanel(hash);
-  } else {
-      // No hash found
-  }
+	var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+	openPanel(hash);
+ }
 
 function openPanel(id) {
 	var jewelryId = $('#' + id);
 	var jewelryCurrent = jewelryId.parents('.jewelry-item');
 	console.log(jewelryCurrent);
-	window.location.hash = id;
+	history.pushState(null, null, '#' + id);
 	$('.jewelry-item').not(jewelryCurrent).removeClass('active');
 	if(jewelryCurrent.hasClass('active')) {
 		jewelryCurrent.removeClass('active');
