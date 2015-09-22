@@ -179,22 +179,6 @@
 			"sold" : "2"
 		},
 		{	"name" : "Balls Mahoney",
-			"id" : "10",
-			"img" : {
-				"square" : {
-					"src" : "http://frostfinery.com/wp-content/uploads/2014/11/littlemountainstack.jpg"
-				}
-			},
-			"type" : "Ring",
-			"section" : "Collection",
-			"material" : "Gold-Plated",
-			"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
-			"retail" : "60",
-			"bom" : "40",
-			"inventory" : "3",
-			"sold" : "2"
-		},
-		{	"name" : "Balls Mahoney",
 			"id" : "11",
 			"img" : {
 				"square" : {
@@ -260,6 +244,22 @@
 		},
 		{	"name" : "Balls Mahoney",
 			"id" : "15",
+			"img" : {
+				"square" : {
+					"src" : "http://frostfinery.com/wp-content/uploads/2014/11/littlemountainstack.jpg"
+				}
+			},
+			"type" : "Ring",
+			"section" : "Collection",
+			"material" : "Gold-Plated",
+			"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
+			"retail" : "60",
+			"bom" : "40",
+			"inventory" : "3",
+			"sold" : "2"
+		},
+		{	"name" : "Balls Mahoney",
+			"id" : "16",
 			"img" : {
 				"square" : {
 					"src" : "http://frostfinery.com/wp-content/uploads/2014/11/littlemountainstack.jpg"
