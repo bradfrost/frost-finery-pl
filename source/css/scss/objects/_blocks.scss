@@ -71,7 +71,10 @@
 .jewelry-thumb {
 	display: block;
 	position: relative;
-	
+	-webkit-box-shadow: 2px 11px 12px -13px rgba(211,211,211,1);
+	-moz-box-shadow: 2px 11px 12px -13px rgba(211,211,211,1);
+	box-shadow: 2px 11px 12px -13px rgba(211,211,211,1);
+			
 	&:after {
 		display: none;
 		content: "";
