@@ -13,26 +13,9 @@ var current = 1;
 flyoutMode = false;
 var jewelryFlyout = document.querySelectorAll('.jewelry-image > a');
 $('.jewelry-image > a').click(function(event) {
+	var thisHref = $(this).attr('href').substring(1);
 	event.preventDefault();
-	var jewelryId = $(this).attr('href');
-	var jewelryCurrent = $(this).parents('.jewelry-item');
-	console.log(jewelryCurrent);
-	$('.jewelry-item').not(jewelryCurrent).removeClass('active');
-	if(jewelryCurrent.hasClass('active')) {
-		jewelryCurrent.removeClass('active');
-	}
-	else {
-		jewelryCurrent.addClass('active');
-		jewelryPanelPosition();
-	}
-	
-	//Set gallery image back to the first image
-	current = 1;
-	$('.jewelry-item.active .jewelry-gallery li').removeClass("active");
-	$(".jewelry-item.active .jewelry-gallery li:nth-of-type(1)").addClass("active");
-	if (isLooping === false) {
-		startInterval();
-	}
+	openPanel(thisHref);
 });
 
 function jewelryPanelPosition() {
@@ -70,7 +53,35 @@ function startInterval() {
 	}, 4000);
 }
 
+if(window.location.hash) {
+      var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+      openPanel(hash);
+  } else {
+      // No hash found
+  }
 
+function openPanel(id) {
+	var jewelryId = $('#' + id);
+	var jewelryCurrent = jewelryId.parents('.jewelry-item');
+	console.log(jewelryCurrent);
+	window.location.hash = id;
+	$('.jewelry-item').not(jewelryCurrent).removeClass('active');
+	if(jewelryCurrent.hasClass('active')) {
+		jewelryCurrent.removeClass('active');
+	}
+	else {
+		jewelryCurrent.addClass('active');
+		jewelryPanelPosition();
+	}
+	
+	//Set gallery image back to the first image
+	current = 1;
+	$('.jewelry-item.active .jewelry-gallery li').removeClass("active");
+	$(".jewelry-item.active .jewelry-gallery li:nth-of-type(1)").addClass("active");
+	if (isLooping === false) {
+		startInterval();
+	}
+}
 	
 function getOffsetLeft( elem )
 {
