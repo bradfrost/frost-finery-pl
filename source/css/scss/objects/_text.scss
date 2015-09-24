@@ -109,3 +109,21 @@
 		z-index: 1;
 	}
 }
+
+.footer-event-link {
+    font-size: 0.85em;
+    font-family: "adelle","HelveticaNeue","Helvetica","Arial",sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: lowercase;
+    text-align: center;
+    margin-bottom: 0.5em;
+    
+    a {
+	    transition: color 0.2s ease;
+    
+	    &:hover {
+		    color: $pink;
+		}
+    }
+}
