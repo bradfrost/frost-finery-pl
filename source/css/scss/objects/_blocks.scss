@@ -48,6 +48,30 @@
 	
 }
 
+.event-shops-container {
+	display: block;
+	
+	@media all and (min-width: 610px) {
+				display: flex;
+			}
+}
+
+.event-container {
+	width: 100%;
+	
+	@media all and (min-width: 610px) {
+				width: 50%;
+			}	
+}
+
+.shop-container {
+	width: 100%;
+	
+	@media all and (min-width: 610px) {
+				width: 50%;
+			}
+}
+
 .jewelry-item {
 	display: block;
 	width: 100%;
