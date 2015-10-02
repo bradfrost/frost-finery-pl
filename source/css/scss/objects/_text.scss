@@ -56,7 +56,7 @@
 	}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 $space 1.2em;
 
 		ul {
@@ -74,6 +74,15 @@
 	}
 }
 
+.center-text {
+	text-align: center;
+}
+
+.press-content {
+	li {
+		margin: 0 0 4em 0;
+	}
+}
 /* Review Grade Tile */
 .grade {
 	display: block;
