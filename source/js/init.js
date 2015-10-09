@@ -14,6 +14,10 @@ flyoutMode = false;
 var jewelryFlyout = document.querySelectorAll('.jewelry-image > a');
 $('.jewelry-image > a').click(function(event) {
 	event.preventDefault();
+	$('.jewelry-gallery li img').each(function() {
+	var changeSource = $(this).attr('data-src');
+	$(this).attr("src", changeSource);
+	});
 	var thisHref = $(this).attr('href').substring(1);
 	openPanel(thisHref);
 });
@@ -41,7 +45,8 @@ function advanceImage() {
 	console.log(current);
 }
 
-$('.jewelry-gallery').click(function(event) {;
+$('.jewelry-gallery').click(function(event) {
+	event.preventDefault();
 	clearInterval(isLooping);
 	isLooping = false;
 	advanceImage();
