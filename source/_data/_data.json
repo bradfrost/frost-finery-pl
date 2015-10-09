@@ -42,38 +42,38 @@
 	"cta" : "Call to action",
 	"touts" : [
 		{
-			"eyebrow" : "From the Sketchbook",
-			"title" : "Selecting Stones",
+			"eyebrow" : "Behind the bench",
+			"title" : "Prototypes & Process",
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png"
+					"src" : "http://frostfinery.com/wp-content/uploads/2014/10/hp_keystones_400x400.jpg"
 				}
 			}
 		},
 		{
-			"eyebrow" : "Most Popular",
-			"title" : "Keystone Earrings",
+			"eyebrow" : "Frost Finery Collection",
+			"title" : "Shop Now",
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png"
+					"src" : "http://frostfinery.com/wp-content/uploads/2014/10/hp_collection_400x400.jpg"
 				}
 			}
 		},
 		{
-			"eyebrow" : "Geometric Charm",
-			"title" : "For Your Arm",
+			"eyebrow" : "Need a unique gift?",
+			"title" : "See Custom Work",
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png"
+					"src" : "http://frostfinery.com/wp-content/uploads/2014/10/hp_customwork_400x400.jpg"
 				}
 			}
 		},
 		{
-			"eyebrow" : "Lookbook",
-			"title" : "Fall/Winter 2015",
+			"eyebrow" : "Coming soon!",
+			"title" : "2015 Lookbook",
 			"img" : {
 				"square" : {
-					"src" : "../../images/fpo_square.png"
+					"src" : "http://frostfinery.com/wp-content/uploads/2014/10/lookbook_preview_400x400.jpg"
 				}
 			}
 		}
