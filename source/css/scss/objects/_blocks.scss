@@ -48,6 +48,30 @@
 	
 }
 
+.event-shops-container {
+	display: block;
+	
+	@media all and (min-width: 610px) {
+				display: flex;
+			}
+}
+
+.event-container {
+	width: 100%;
+	
+	@media all and (min-width: 610px) {
+				width: 50%;
+			}	
+}
+
+.shop-container {
+	width: 100%;
+	
+	@media all and (min-width: 610px) {
+				width: 50%;
+			}
+}
+
 .jewelry-item {
 	display: block;
 	width: 100%;
@@ -187,5 +211,40 @@
 	}
 	
   	
+}
+
+.press-content{
+	display: inline-block;
+	list-style: none;
+	margin: 2em;
+	
+	a {
+		transition: color 0.2s ease;
+		
+		&:hover {
+			color: $pink;
+		}
+	}
+	
+	img {
+		max-width: 300px;
+		filter: grayscale(1);
+	}
+	
+}
+
+.testimonial {
+	margin-top: 1em;
+	padding: 0;
+	display: inline-block;
+	font-size: 24px;
+	
+	p {
+		display: block;
+	}
+}
+
+.wp-caption {
+	max-width: 100% !important;
 }
 

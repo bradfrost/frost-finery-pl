@@ -56,7 +56,7 @@
 	}
 
 	ul {
-		list-style: square;
+		list-style: none;
 		margin: 0 0 $space 1.2em;
 
 		ul {
@@ -74,6 +74,15 @@
 	}
 }
 
+.center-text {
+	text-align: center;
+}
+
+.press-content {
+	li {
+		margin: 0 0 4em 0;
+	}
+}
 /* Review Grade Tile */
 .grade {
 	display: block;
@@ -108,4 +117,22 @@
 		left: 0;
 		z-index: 1;
 	}
+}
+
+.footer-event-link {
+    font-size: 0.85em;
+    font-family: "adelle","HelveticaNeue","Helvetica","Arial",sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: lowercase;
+    text-align: center;
+    margin-bottom: 0.5em;
+    
+    a {
+	    transition: color 0.2s ease;
+    
+	    &:hover {
+		    color: $pink;
+		}
+    }
 }

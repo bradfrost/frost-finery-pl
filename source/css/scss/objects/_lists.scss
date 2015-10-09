@@ -6,6 +6,7 @@
 
 .events-list-item {
 	text-align: center;
+	
 	a {
 		color: $gray;
 		display: block;
@@ -14,6 +15,7 @@
 		
 		&:hover, &:hover h3 {
 			color: $pink;
+			
 		}
 		
 		h3 {
@@ -40,5 +42,25 @@
 			display: none;
 		}
 	}
+}
+
+.next-event-list-item {
+		text-align: center;
+	a {
+		color: $white;
+		display: block;
+		transition: all 0.2s ease-in-out;
+		margin: 1em 0 1em 0;
+		
+		&:hover, &:hover h3 {
+			color: $pink;
+		}
+		
+		h3 {
+			color: $white;		
+			transition: all 0.2s ease-in-out;
+		}
+	}
+	
 }
 

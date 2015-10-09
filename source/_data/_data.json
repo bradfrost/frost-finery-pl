@@ -81,10 +81,19 @@
 	"hero": true,
 	"event": {
 		"name": "Lorem ipsum",
-		"location": "Street, City, State",
+		"street": "404 Not Found Lane",
+		"city": "Pittsburgh",
+		"state": "PA",
 		"date": "August 24, 2015",
 		"time": "7:00AM",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	},
+	"shops": {
+		"name": "Lorem ipsum",
+		"street": "Street",
+		"city": "City",
+		"state": "State",
+		"zip": "12345"
 	},
 	"name" : "Balls Mahoney",
 	"img" : {
