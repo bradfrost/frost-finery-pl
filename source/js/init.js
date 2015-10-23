@@ -14,10 +14,6 @@ flyoutMode = false;
 var jewelryFlyout = document.querySelectorAll('.jewelry-image > a');
 $('.jewelry-image > a').click(function(event) {
 	event.preventDefault();
-	$('.jewelry-gallery li img').each(function() {
-	var changeSource = $(this).attr('data-src');
-	$(this).attr("src", changeSource);
-	});
 	var thisHref = $(this).attr('href').substring(1);
 	openPanel(thisHref);
 });
@@ -67,6 +63,10 @@ function openPanel(id) {
 	var jewelryId = $('#' + id);
 	var jewelryCurrent = jewelryId.parents('.jewelry-item');
 	console.log(jewelryCurrent);
+	jewelryCurrent.find('.jewelry-gallery img').each(function() {
+	var changeSource = $(this).attr('data-src');
+	$(this).attr("src", changeSource);
+	});
 	history.pushState(null, null, '#' + id);
 	$('.jewelry-item').not(jewelryCurrent).removeClass('active');
 	if(jewelryCurrent.hasClass('active')) {
@@ -88,6 +88,25 @@ function openPanel(id) {
 	console.log("Offset Top: " + yOffset);
 	window.scrollTo(0, (yOffset-($('.jewelry-thumb').height())));
 }
+
+//Testimonials carousel
+var currentCarousel = 1;
+var carouselItems = $('.testimonial-list li').length;
+function advanceCarousel() {
+	$('.testimonial-list li').removeClass("active");
+	if (currentCarousel===carouselItems) {
+	currentCarousel = 1;
+	}
+	else {
+		currentCarousel++;
+	}
+	$('.testimonial-list li:nth-child('+(currentCarousel)+')').addClass("active");
+}
+advanceCarousel();
+
+setInterval(function() {
+	advanceCarousel();
+}, 10000);
 	
 function getOffsetLeft( elem )
 {

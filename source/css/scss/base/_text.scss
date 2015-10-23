@@ -25,8 +25,18 @@ hr {
 	    max-width: 27em;
 		margin: 3em auto 2em;
     }
-
-
+    
+    &.hr-simple {
+	    max-width: 27em;
+		margin: 2em auto 2em;
+		border-color: $gray;
+		
+	    
+	    &:before, &:after {
+		    background: none;
+	    }
+    }
+    
     &:before, &:after {
 	    content: "";
 	    display: block;

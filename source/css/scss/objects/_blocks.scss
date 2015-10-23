@@ -26,6 +26,10 @@
 		color: $gray-dark;
 		font-style: italic;
 	}
+	
+	.b-thumb {
+		margin-top: -2em;
+	}
 
 	img {
 		display: block;
@@ -211,6 +215,7 @@
 	}
 }
 
+//Press Block
 .block-press {
 	text-align: center;
 	margin-bottom: 1em;
@@ -229,35 +234,80 @@
 	}
 }
 
-.press-content{
-	display: inline-block;
-	list-style: none;
-	margin: 2em;
-
+.block-testimonial {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	font-size: 24px;
+	opacity: 0;
+	transition: opacity 1s ease;
+	overflow: hidden;
+	z-index: 0;
+	
+	&.active {
+		position: relative;
+		height: auto;
+		display: block;
+		opacity: 1;
+		z-index: 2;
+	}
+	
+	blockquote {
+		border-left: none;
+		padding: 0;
+		margin: 1em;
+		color: $gray-dark;
+		
+		p {
+			margin: 0;
+			padding: 0;
+			
+			&:before {
+				content: '\201C';
+			}
+			&:after {
+				content: '\201D';
+			}
+		}
+		
+		cite {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	
 	a {
+		font: $font-tertiary;
+		color: $gray;
 		transition: color 0.2s ease;
-
+		
 		&:hover {
 			color: $pink;
 		}
 	}
 
-	img {
-		max-width: 300px;
-		filter: grayscale(1);
-	}
-
-}
-
-.testimonial {
-	margin-top: 1em;
-	padding: 0;
-	display: inline-block;
-	font-size: 24px;
-
 	p {
+		font: $font-tertiary;
 		display: block;
 	}
+}
+
+.testimonial-section {
+	position: relative;
+	text-align: center;
+	min-height: 8em;
+	margin: 0;
+	
+	@media all and (min-width: 700px) {
+		margin: 0 4em;
+	}
+	
+	@media all and (min-width: 900px) {
+		margin: 0 9em;
+		
+	}
+	
 }
 
 .wp-caption {
