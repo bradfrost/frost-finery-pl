@@ -11,10 +11,10 @@
 /* Layout Container */
 .lc {
 	@extend .cf;
-	max-width: $max-width;	
+	max-width: $max-width;
 	margin: 0 auto;
 	padding: $pad-half;
-	
+
 	@media all and (min-width: $bp-med) {
 		padding: $pad-half $pad;
 	}
@@ -40,7 +40,7 @@
 			padding-right: $pad;
 		}
 	}
-	
+
 	.l-sidebar {
 		@media all and (max-width: $bp-large) {
 			clear: both;
@@ -68,7 +68,7 @@
 /* Grid Item */
 .gi {
 	padding: $pad-half;
-	
+
 	img {
 		display: block;
 	}
@@ -88,13 +88,12 @@
 /* Grid 2up */
 .g-2up {
 	@media all and (min-width: $bp-med) {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+
 		> .gi {
-			float: left;
 			width: 50%;
-			
-			&:nth-of-type(odd) {
-				clear: left;
-			}
 		}
 	}
 }
@@ -105,21 +104,21 @@
 		> .gi {
 			float: left;
 			width: 50%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: left;
 			}
 		}
 	}
-	
+
 	@media all and (min-width: $bp-large) {
 		> .gi {
 			width: 33.3333333%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(3n+1) {
 				clear: left;
 			}
@@ -130,30 +129,30 @@
 /* Grid 4up */
 .g-4up {
 	margin: 0 (-0.75em);
-	
+
 	.gi {
 		padding: 0.75em;
 	}
-	
+
 	@media all and (min-width: 32em) {
 		>.gi {
 			float: left;
 			width: 50%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: both;
 			}
 		}
 	}
-	
+
 	@media all and (min-width: $bp-large) {
 		>.gi {
 			width: 25%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(4n+1) {
 				clear: left;
 			}
@@ -163,44 +162,44 @@
 
 .g-max4 {
 	margin: 0 (-0.75em);
-	
+
 	.gi {
 		padding: 0.75em;
 	}
-	
+
 	@media all and (min-width: 32em) {
 		>.gi {
 			float: left;
 			width: 50%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: both;
 			}
 		}
 	}
-	
+
 	@media all and (min-width: 40em) {
 		>.gi {
 			width: 33.3333333%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(3n+1) {
 				clear: both;
 			}
 		}
 	}
-	
+
 	@media all and (min-width: 54em) {
 		>.gi {
 			width: 25%;
-			
+
 			&:nth-of-type(3n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(4n+1) {
 				clear: both;
 			}
