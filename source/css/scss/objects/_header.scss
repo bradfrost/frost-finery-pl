@@ -7,29 +7,39 @@
 	float: left;
 	margin: 0;
 	font-size: 1em;
-	
+
 	a {
 		display: block;
 	}
-	
-	img {
+
+	svg {
 		width: 200px;
+
+		g {
+			transition: all 0.2s ease;
+		}
+
+		&:hover, &:focus {
+			g {
+				fill: $pink;
+			}
+		}
 	}
-	
+
 	@media all and (min-width: 40.6em) {
 		float: none;
 		margin: 0 auto;
 		text-align: center;
-		
+
 		a {
 			padding: 1em 1em 0;
 		}
 	}
-	
+
 	@media all and (min-width: 54.5em) {
 		float: left;
 		margin: 0;
-		
+
 		a {
 			padding: 1em 0;
 		}
@@ -44,13 +54,13 @@
 	border: 1px solid $gray;
 	padding: 0.5em;
 	margin: 0.7em 0 0 0;
-	
-	
+
+
 	&:hover, &:focus {
 		border-color: $pink;
 		color: $pink;
 	}
-	
+
 	&.active {
 		color: $white;
 		background: $black;
@@ -64,8 +74,8 @@
 
 //Simple header
 .header-simple {
-	text-align: center; 
-	
+	text-align: center;
+
 	.logo {
 		float: none;
 		display: inline-block;
