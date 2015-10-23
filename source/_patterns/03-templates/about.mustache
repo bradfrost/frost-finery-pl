@@ -1,24 +1,28 @@
 {{> organisms-header }}
 <main role="main">
-	<div class="g g-2up">
-		<div class="gi">
-			{{> atoms-square }}
+	{{> molecules-block-hero }}
+
+	<section>
+		<div class="lc-single">
+			<p>Pittsburgh is home to Frost Finery Jewlery Studio where creating staple pieces that can be worn every day is the mission. The addiction of melting, hammering and manipulating metal into beautiful gifts is the undertaking of boss lady and metal maven Melissa Frost. Put simply, Frost Finery was born to make and serve the shiny.</p>
+
+			<p>These jewels are handmade. How handmade? Every design starts off as a sketch. Then they’re prototyped by hand to make sure sizing, fitting and durability are spot-on. Fabrication follows at Frost Finery home studio in Lawrenceville, Pittsburgh and also at the Society for Contemporary Craft and TechShop for more heavy duty torch and water-jetting action.</p>
+
+			<p>The hope is for each shiny piece of metal to remind its lovely wearers of someone, some feeling, idea or place to be thankful for.</p>
+
 		</div>
-		<div class="gi">
-			<h1>Behind the Bench</h1>
-			<p>About two years ago my husband and I left Brooklyn for Pittsburgh and it was a rough transition. With new found time in my life, I signed up for a metalsmithing class and stepped away from my stressful digital graphic design life to instead try making something tangible.
-Ever since my first class I haven’t been able to stop – I just love to manipulate this shiny metal. I found a new creative outlet that let me transfer my graphic design skills in a whole new way. Being able to make tangible gifts for family and friends has been so rewarding. I hope each shiny piece of metal reminds it’s lovely wearers of someone, something or some place to be thankful for  (that includes honoring yourself!) </p>
-		</div>
-	</div>
-	<div class="g g-2up">
-		<div class="gi">
-			<h2 class="alpha">Making Process</h2>
-			<p>I have been so fortunate to be surrounded by great teachers and a supportive community in my short time in Pittsburgh. Many of my teachers and friends come from a traditionalist background so I’ve been able to get an understanding of the tools and tasks that come with making something hand made. In the last few months, I entered into an apprenticeship with TechShop which allowed me to really focus on making jewelry and challenge myself to find new ways to enhance my process. All my designs start with sketches, then they’re prototyped by hand and then I find ways to enhance, like cutting out shapes on a waterjet to make shapes more exact when reproduced or adding new elements like powder coating. I cannot stress how much this community has been so open & giving. Much love to yinz!</p>
-		</div>
-		<div class="gi">
-			<h2 class="alpha">Much Love</h2>
-			<p>I have been so fortunate to be surrounded by great teachers and a supportive community in my short time in Pittsburgh. Many of my teachers and friends come from a traditionalist background so I’ve been able to get an understanding of the tools and tasks that come with making something hand made. In the last few months, I entered into an apprenticeship with TechShop which allowed me to really focus on making jewelry and challenge myself to find new ways to enhance my process. All my designs start with sketches, then they’re prototyped by hand and then I find ways to enhance, like cutting out shapes on a waterjet to make shapes more exact when reproduced or adding new elements like powder coating. I cannot stress how much this community has been so open & giving. Much love to yinz!</p>
-		</div>
-	</div>
+	</section>
+	<hr class="hr-short" />
+	<section>
+		{{# press }}
+		{{> molecules-block-hero-text }}
+		{{/ press }}
+	</section>
+	<hr class="hr-short" />
+	<section>
+		{{# thanks }}
+		{{> molecules-block-hero-text }}
+		{{/ thanks }}
+	</section>
 </main><!--End role=main-->
 {{> organisms-footer }}
