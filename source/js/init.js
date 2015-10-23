@@ -88,6 +88,25 @@ function openPanel(id) {
 	console.log("Offset Top: " + yOffset);
 	window.scrollTo(0, (yOffset-($('.jewelry-thumb').height())));
 }
+
+//Testimonials carousel
+var currentCarousel = 1;
+var carouselItems = $('.testimonial-list li').length;
+function advanceCarousel() {
+	$('.testimonial-list li').removeClass("active");
+	if (currentCarousel===carouselItems) {
+	currentCarousel = 1;
+	}
+	else {
+		currentCarousel++;
+	}
+	$('.testimonial-list li:nth-child('+(currentCarousel)+')').addClass("active");
+}
+advanceCarousel();
+
+setInterval(function() {
+	advanceCarousel();
+}, 10000);
 	
 function getOffsetLeft( elem )
 {
