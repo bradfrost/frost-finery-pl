@@ -37,6 +37,10 @@
 }
 
 .events-list {
+	
+	max-width: 28em;
+	margin: 0 auto;
+	
 	li:last-child {
 		.events-list-item:after {
 			display: none;
