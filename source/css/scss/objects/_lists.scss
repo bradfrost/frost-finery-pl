@@ -6,12 +6,12 @@
 
 .events-list-item {
 	text-align: center;
+	margin: 1em 0;
 	
 	a {
 		color: $gray;
 		display: block;
 		transition: all 0.2s ease-in-out;
-		margin: 1em 0 1em 0;
 		
 		&:hover, &:hover h3 {
 			color: $pink;
