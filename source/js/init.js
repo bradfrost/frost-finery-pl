@@ -40,7 +40,6 @@ function advanceImage() {
 		current = 1;
 	}
 	$(".jewelry-item.active .jewelry-gallery li:nth-of-type("+current+")").addClass("active");
-	console.log(current);
 }
 
 $('.jewelry-gallery').click(function(event) {
@@ -65,20 +64,22 @@ if(window.location.hash) {
 function openPanel(id) {
 	var jewelryId = $('#' + id);
 	var jewelryCurrent = jewelryId.parents('.jewelry-item');
-	console.log(jewelryCurrent);
+
 	jewelryCurrent.find('.jewelry-gallery img').each(function() {
-	var changeSource = $(this).attr('data-src');
-	$(this).attr("src", changeSource);
+		var changeSource = $(this).attr('data-src');
+		$(this).attr("src", changeSource);
 	});
+
 	history.pushState(null, null, '#' + id);
+
 	$('.jewelry-item').not(jewelryCurrent).removeClass('active');
+
 	if(jewelryCurrent.hasClass('active')) { //If the jewelry panel is open
 		jewelryCurrent.removeClass('active');
 	}
 	else { //The jewelry panel is closed
 		jewelryCurrent.addClass('active');
 		jewelryPanelPosition();
-
 		var yOffset = getOffsetTop(jewelryId[0]); //Find the ypos of the selected jewerly item
 		window.scrollTo(0, (yOffset-($('.jewelry-thumb').height()))); //Scroll window to yOffset
 	}
