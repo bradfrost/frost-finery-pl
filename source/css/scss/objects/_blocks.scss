@@ -274,6 +274,13 @@
 		p {
 			margin: 0;
 			padding: 0;
+			
+			&:before {
+				content: '\201C';
+			}
+			&:after {
+				content: '\201D';
+			}
 		}
 		
 		cite {
