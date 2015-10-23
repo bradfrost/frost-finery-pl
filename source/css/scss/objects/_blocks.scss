@@ -1,7 +1,7 @@
 /* Block */
 .block {
 	overflow: hidden;
-	
+
 	a {
 		transition: color 0.2s ease;
 		&:hover, &:focus {
@@ -18,7 +18,7 @@
 .block-hero {
 	margin-bottom: $space;
 	text-align: center;
-	
+
 	.b-excerpt {
 		font-family: $font-secondary;
 		margin: 0 auto 2em;
@@ -39,18 +39,18 @@
 		font-size: 100%;
 		text-transform: lowercase;
 	}
-	
+
 	.b-title {
 		font-size: 100%;
 		text-transform: uppercase;
 		margin-bottom: 1em;
 	}
-	
+
 }
 
 .event-shops-container {
 	display: block;
-	
+
 	@media all and (min-width: 610px) {
 				display: flex;
 			}
@@ -58,15 +58,15 @@
 
 .event-container {
 	width: 100%;
-	
+
 	@media all and (min-width: 610px) {
 				width: 50%;
-			}	
+			}
 }
 
 .shop-container {
 	width: 100%;
-	
+
 	@media all and (min-width: 610px) {
 				width: 50%;
 			}
@@ -75,47 +75,47 @@
 .jewelry-item {
 	display: block;
 	width: 100%;
-	
+
 	&.active {
 		.jewelry-panel {
 			display: block;
-			
+
 			@media all and (min-width: 640px) {
 				display: flex;
 			}
 		}
-		
+
 		.jewelry-thumb:after {
 			display: block;
 		}
 	}
 }
 
-		
+
 .jewelry-thumb {
 	display: block;
 	position: relative;
-			
+
 	&:after {
 		display: none;
 		content: "";
 		position: absolute;
 		bottom: -1px;
 		left: 50%;
-		width: 0; 
+		width: 0;
 		height: 0;
-		margin-left: -20px; 
+		margin-left: -20px;
 		border-left: 20px solid transparent;
 		border-right: 20px solid transparent;
 		border-bottom: 20px solid $gray-dark;
 		z-index: 99999;
 		}
-	
+
 	img {
 	transition: all 0.2s ease-in-out;
 	box-shadow: 2px 11px 12px -13px rgba(0,0,0,0.2);
-	border: solid #ededed 1px; 
-	
+	border: solid #ededed 1px;
+
 		&:hover {
 			transform: translate3d(0,0,0);
 			transform: scale(1.1);
@@ -124,7 +124,7 @@
 }
 
 
-	
+
 .jewelry-panel {
 	display: none;
 	position: relative;
@@ -133,17 +133,17 @@
 	padding: 1em;
 	width: 100vw;
 	z-index: 99999;
-	
+
 	h2 {
 		font-family: "etica-display","HelveticaNeue","Helvetica","Arial",sans-serif;
 		padding: 0.3em 0 0.3em 0;
 	}
-	
+
 	p {
 		font-family: "adelle","HelveticaNeue","Helvetica","Arial",sans-serif;
 		font-style: italic;
 	}
-	
+
 	ul {
 		font-family: "adelle","HelveticaNeue","Helvetica","Arial",sans-serif;
 		font-style: italic;
@@ -151,11 +151,11 @@
 		margin-left: 10px;
 		padding: 0 0 1em 0;
 	}
-	
+
 	@media all and (min-width: 1400px) {
 		padding: 1em 10vw;
 	}
-	
+
 	@media all and (min-width: 1900px) {
 		padding: 1em 20vw;
 	}
@@ -168,7 +168,7 @@
 		transform: none;
 		transition: none;
 	}
-	
+
 	@media all and (min-width: 640px) {
 				flex: 1 0 auto;
 				width: 50%;
@@ -183,7 +183,7 @@
 
 .jewelry-gallery {
 	cursor: pointer;
-    
+
     ul {
 	    position: relative;
 	    top:0;
@@ -200,37 +200,53 @@
 	    z-index: 1;
 	    opacity: 0;
 	    transition: opacity 1s ease;
-	   
+
 	}
-	
+
 	li.active {
 		 position: relative;
 		 width: 100%;
 		 z-index: 2;
 		 opacity: 1
 	}
-	
-  	
+}
+
+.block-press {
+	text-align: center;
+	margin-bottom: 1em;
+
+	img {
+		margin: 0 auto 0.5em;
+		filter: grayscale(100%);
+		max-width: 300px;
+		transition: all 0.2s ease-out;
+	}
+
+	&:hover, &:focus {
+		img {
+			filter: grayscale(0);
+		}
+	}
 }
 
 .press-content{
 	display: inline-block;
 	list-style: none;
 	margin: 2em;
-	
+
 	a {
 		transition: color 0.2s ease;
-		
+
 		&:hover {
 			color: $pink;
 		}
 	}
-	
+
 	img {
 		max-width: 300px;
 		filter: grayscale(1);
 	}
-	
+
 }
 
 .testimonial {
@@ -238,7 +254,7 @@
 	padding: 0;
 	display: inline-block;
 	font-size: 24px;
-	
+
 	p {
 		display: block;
 	}
@@ -247,4 +263,3 @@
 .wp-caption {
 	max-width: 100% !important;
 }
-
