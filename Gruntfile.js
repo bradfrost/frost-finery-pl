@@ -55,6 +55,7 @@ module.exports = function(grunt) {
 		  main: {
 		    files: [
 		      { src:"public/style.css", dest:"../wordpress/wp-content/themes/frostfinery/style.css" },
+              { src:"public/js/production.min.js", dest:"../wordpress/wp-content/themes/frostfinery/js/production.min.js" },
 		      { src:"source/js/modernizr.js", dest:"public/js/modernizr.js" },
 		      { expand: true, cwd: 'public/', src:"images/*", dest:"../../wordpress/wp-content/themes/frostfinery/" }
 		    ]
@@ -63,7 +64,7 @@ module.exports = function(grunt) {
 		watch: {
             all: {
                 files: ['*'],
-                options: { 
+                options: {
                 	livereload: {
 						port: 9100
 					}
