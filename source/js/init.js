@@ -1,17 +1,19 @@
 (function(w){
-	
+
 	$('.nav-toggle').on('click', function(e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
 		$('#nav').toggleClass('active');
 	});
-	
+
 })(this);
 
 var isLooping = false;
 var current = 1;
 flyoutMode = false;
 var jewelryFlyout = document.querySelectorAll('.jewelry-image > a');
+
+//Click on jewelry thumbnail
 $('.jewelry-image > a').click(function(event) {
 	event.preventDefault();
 	var thisHref = $(this).attr('href').substring(1);
@@ -38,7 +40,6 @@ function advanceImage() {
 		current = 1;
 	}
 	$(".jewelry-item.active .jewelry-gallery li:nth-of-type("+current+")").addClass("active");
-	console.log(current);
 }
 
 $('.jewelry-gallery').click(function(event) {
@@ -59,24 +60,30 @@ if(window.location.hash) {
 	openPanel(hash);
  }
 
+//Open the jewelry details for the selected piece
 function openPanel(id) {
 	var jewelryId = $('#' + id);
 	var jewelryCurrent = jewelryId.parents('.jewelry-item');
-	console.log(jewelryCurrent);
+
 	jewelryCurrent.find('.jewelry-gallery img').each(function() {
-	var changeSource = $(this).attr('data-src');
-	$(this).attr("src", changeSource);
+		var changeSource = $(this).attr('data-src');
+		$(this).attr("src", changeSource);
 	});
+
 	history.pushState(null, null, '#' + id);
+
 	$('.jewelry-item').not(jewelryCurrent).removeClass('active');
-	if(jewelryCurrent.hasClass('active')) {
+
+	if(jewelryCurrent.hasClass('active')) { //If the jewelry panel is open
 		jewelryCurrent.removeClass('active');
 	}
-	else {
+	else { //The jewelry panel is closed
 		jewelryCurrent.addClass('active');
 		jewelryPanelPosition();
+		var yOffset = getOffsetTop(jewelryId[0]); //Find the ypos of the selected jewerly item
+		window.scrollTo(0, (yOffset-($('.jewelry-thumb').height()))); //Scroll window to yOffset
 	}
-	
+
 	//Set gallery image back to the first image
 	current = 1;
 	$('.jewelry-item.active .jewelry-gallery li').removeClass("active");
@@ -84,9 +91,6 @@ function openPanel(id) {
 	if (isLooping === false) {
 		startInterval();
 	}
-	var yOffset = getOffsetTop(jewelryId[0]); 
-	console.log("Offset Top: " + yOffset);
-	window.scrollTo(0, (yOffset-($('.jewelry-thumb').height())));
 }
 
 //Testimonials carousel
@@ -107,7 +111,7 @@ advanceCarousel();
 setInterval(function() {
 	advanceCarousel();
 }, 10000);
-	
+
 function getOffsetLeft( elem )
 {
     var offsetLeft = 0;
@@ -131,6 +135,3 @@ function getOffsetTop( elem )
     } while( elem = elem.offsetParent );
     return offsetTop;
 }
-
-
-

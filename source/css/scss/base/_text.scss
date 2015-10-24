@@ -1,4 +1,4 @@
-/* Text-Related Elements */ 
+/* Text-Related Elements */
 p {
 	margin-bottom: $space;
 }
@@ -12,7 +12,7 @@ blockquote {
 	margin-bottom: $space;
 }
 
-/* Horizontal Rule */ 
+/* Horizontal Rule */
 hr {
 	display: block;
 	border: 0;
@@ -20,10 +20,10 @@ hr {
     margin: $space-double 0 $space;
     position: relative;
     width: 100%;
-    
+
     &.hr-short {
 	    max-width: 27em;
-		margin: 2em auto 2em;
+		margin: 3em auto 2em;
     }
     
     &.hr-simple {
@@ -37,7 +37,6 @@ hr {
 	    }
     }
     
-    
     &:before, &:after {
 	    content: "";
 	    display: block;
@@ -49,7 +48,7 @@ hr {
 	    bottom: 95%;
 	    left: 0;
     }
-    
+
     &:after {
 	    left: auto;
 	    right: 0;
