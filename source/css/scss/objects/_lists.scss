@@ -67,3 +67,30 @@
 	}
 	
 }
+
+// List of links
+.link-list {
+	text-align: center;
+	color: $pink;
+	font-weight: bold;
+
+	a {
+		color: $pink;
+		transition: color 0.2s ease-out;
+
+		&:hover, &:focus {
+			color: $gray-dark;
+		}
+	}
+
+	@media all and (min-width: 40em) {
+		text-align: left;
+		column-width: 50%;
+		column-count: 2;
+	}
+
+	@media all and (min-width: 52em) {
+		column-width: 33.333333%;
+		column-count: 3;
+	}
+}
