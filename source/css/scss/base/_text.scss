@@ -14,7 +14,7 @@ blockquote {
 
 /* Horizontal Rule */
 hr {
-	display: block;
+	display: flex;
 	border: 0;
 	border-bottom: 1px solid $black;
     margin: $space-double 0 $space;
@@ -25,18 +25,18 @@ hr {
 	    max-width: 27em;
 		margin: 3em auto 2em;
     }
-    
+
     &.hr-simple {
 	    max-width: 27em;
 		margin: 2em auto 2em;
 		border-color: $gray;
-		
-	    
+
+
 	    &:before, &:after {
-		    background: none;
+		    content: none;
 	    }
     }
-    
+
     &:before, &:after {
 	    content: "";
 	    display: block;
@@ -44,14 +44,13 @@ hr {
 	    height: 30px;
 	    background: url(images/bg_burst.svg) no-repeat 50% 100%;
 	    background-size: contain;
-	    position: absolute;
+	    position: relative;
 	    bottom: 95%;
 	    left: 0;
     }
 
     &:after {
-	    left: auto;
-	    right: 0;
+	    margin-left: auto;
     }
 }
 
