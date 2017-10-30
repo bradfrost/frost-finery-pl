@@ -95,6 +95,10 @@
 	margin-bottom: 2rem;
 }
 
+.c-local-nav__heading {
+	text-align: center;
+}
+
 .c-local-nav__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -104,6 +108,7 @@
 .c-local-nav__link {
 	text-transform: uppercase;
 	padding: 1rem;
+	font-size: $font-size-sm-2;
 	transition: color 0.2s ease;
 
 	&:hover, &:focus {
