@@ -59,8 +59,6 @@
 		}
 	}
 
-
-
 	@media all and (min-width: 40.6em) and (max-width: 54.5em) {
 		text-align: center;
 	}
@@ -102,7 +100,21 @@
 .c-local-nav__list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+
+	@media all and (min-width: $bp-small-2) {
+		margin: 0;
+		justify-content: center;
+	}
+}
+
+.c-local-nav__item {
+	width: 50%;
+
+	@media all and (min-width: $bp-small-2) {
+		width: inherit;
+	}
 }
 
 .c-local-nav__link {
