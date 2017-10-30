@@ -2,7 +2,7 @@
 	"title" : "Frost Finery",
 	"company" : {
 		"name" : "Frost Finery",
-		"url" : "http://frostfinery.com"	
+		"url" : "http://frostfinery.com"
 	},
 	"htmlClass": "pl",
 	"bodyClass": "body",
@@ -108,6 +108,27 @@
 	"retail" : "Retail: $60",
 	"bom" : "BOM Price: $40",
 	"inventory" : "Inventory: 3",
-	"sold" : "Number Sold: 2"
-	
+	"sold" : "Number Sold: 2",
+	"localNavList" : [
+		{
+			"label" : "Minimalist",
+			"id" : "minimalist"
+		},
+		{
+			"label" : "Organic",
+			"id" : "organic"
+		},
+		{
+			"label" : "Pittsburgh Local",
+			"id" : "pittsburgh-local"
+		},
+		{
+			"label" : "Home",
+			"id" : "home"
+		},
+		{
+			"label" : "Archives",
+			"id" : "archives"
+		}
+	]
 }

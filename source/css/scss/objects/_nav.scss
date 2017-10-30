@@ -4,67 +4,67 @@
 
 .nav {
 	clear: both;
-	
+
 	li {
 		float: left;
 		width: 50%;
 		border-bottom: 1px solid $gray-light-2;
-		
+
 		&:nth-child(odd) {
 			border-right: 1px solid $gray-light-2;
 		}
-		
+
 		@media all and (min-width: 40.6em) {
 			float: none;
 			display: inline-block;
 			width: auto;
 			border: 0;
-			
+
 			&:nth-child(odd) {
 				border-right: 0;
 			}
 		}
-		
+
 		&.current-menu-item a {
 			color: $pink;
-			
-			
+
+
 			@media all and (min-width: 40.6em) {
 				background: url(images/bg_nav_active.svg) no-repeat 50% 8px;
 				background-size: 45px auto;
 			}
 		}
 	}
-	
+
 	a {
 		display: block;
 		padding: 1em 0.5em;
 		text-transform: uppercase;
 		text-align: center;
 		transition: color 0.2s ease;
-		
+
 		&:hover, &:focus, &.active {
 			color: $pink;
 		}
-		
+
 		@media all and (min-width: 40.6em) {
 			padding: 1.7em 1em 1em 1em;
 			margin-top: 0.42em;
 			text-align: left;
-			
+
 			&:hover, &:focus, &.active {
 				background: url(images/bg_nav_active.svg) no-repeat 50% 8px;
 				background-size: 45px auto;
 			}
 		}
 	}
-	
-	
-	
+
+
+
 	@media all and (min-width: 40.6em) and (max-width: 54.5em) {
 		text-align: center;
 	}
-	
+
 	@media all and (min-width: 54.5em) {
 		float: right;
 		clear: none;
@@ -77,9 +77,36 @@
 		overflow: hidden;
 		margin: 1em 0 -0.5em;
 		border-top: 1px solid $gray-light-2;
-		
+
 		&.active {
 			display: block;
 		}
+	}
+}
+
+
+
+
+/*------------------------------------*\
+    #LOCAL NAVIGATION
+\*------------------------------------*/
+
+.c-local-nav {
+	margin-bottom: 2rem;
+}
+
+.c-local-nav__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.c-local-nav__link {
+	text-transform: uppercase;
+	padding: 1rem;
+	transition: color 0.2s ease;
+
+	&:hover, &:focus {
+		color: $pink;
 	}
 }
